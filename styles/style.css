@@ -47,6 +47,7 @@ table {
 /* STYLE START */
 body{
     background-color: rgb(230, 230, 230);
+    font-family: 'Comfortaa', cursive;
 }
 
 .header-container{
@@ -112,7 +113,7 @@ main{
 .products-logos a{
     color: grey;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .products-logos a:visited{
@@ -137,19 +138,19 @@ main{
 
 .form-container h2{
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 25px;
     width: 70%;
 }
 
 .form-container h3{
-    font-size: 20px;
+    font-size: 17px;
     width: 85%;
     padding-top: 2px;
 }
 
 .form-container h3 a{
     font-size: 14px;
-    color: rgb(47, 103, 255);;
+    color: rgb(47, 103, 255);
     text-decoration: none;
 }
 
@@ -165,8 +166,54 @@ main{
 
 .new-account-form label{
     padding: 8px 0;
-    font-size: 20px;
-    
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.recommended{
+    font-weight: 300;
+}
+
+.new-account-form input{
+    height: 30px;
+    padding: 0 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(148, 148, 148, 0.459);
+    margin: 5px 0 10px 0;
+}
+
+.new-account-form input:focus{
+    outline: none;
+    border: 1px solid rgb(47, 103, 255);
+    box-shadow: 0 0 3px 0px rgb(47, 103, 255);
+}
+
+#email{
+    margin-bottom: 25px;
+}
+
+.phone-disclaimer{
+    font-size: 9px;
+    margin-bottom: 25px;
+}
+
+#password{
+    margin-bottom: 25px;
+}
+
+#create-button{
+    background-color: #0077C5;
+    color: white;
+    padding: 7px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgb(26, 26, 26);
+}
+
+#create-button:hover{
+    box-shadow: inset 0px 10px 30px -15px #ee95f7, 0px 1px 2px 0px rgb(26, 26, 26);
 }
 
 .form-container p{
@@ -174,7 +221,7 @@ main{
     margin: 0 auto;
     text-align: center;
     padding: 20px 0 30px 0;
-    font-size: 14px;
+    font-size: 11px;
     font-style: italic;
     color:rgb(104, 104, 104);
 }
@@ -191,6 +238,19 @@ main{
 
 .captcha{
     background-color: rgb(230, 230, 230);
+    padding: 20px 35px;
+    font-size: 8px;
+    text-align: center;
+    color: rgb(95, 95, 95);
+}
+
+.captcha a{
+    color: rgb(47, 103, 255);
+    text-decoration: none;
+}
+
+.captcha a:visited{
+    color: rgb(47, 103, 255);
 }
 
 form{
@@ -198,4 +258,58 @@ form{
     flex-direction: column;
     width: 85%;
     margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+}
+
+.small-text-container{
+    width: 400px;
+    margin: 30px auto;
+    font-size: 11px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+
+.small-text-container ul{
+    margin-bottom: 5px;
+}
+
+.small-text-container ul li{
+    display: inline;
+    margin: 0 5px;
+}
+
+.small-text-container ul li a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+}
+
+.small-text-container p{
+    line-height: 1.5;
+}
+
+.privacy-setting{
+    background-color: rgb(252, 252, 252);
+    padding: 25px 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.privacy-setting a{
+    color: rgb(47, 103, 255);
+    text-decoration: none;
+}
+
+.privacy-setting a:visited{
+    color: rgb(47, 103, 255);
+    text-decoration: none;
+}
+
+@media(max-width: 800px){
+    .header-container{
+        display: none;
+    }
 }
